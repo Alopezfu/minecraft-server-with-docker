@@ -5,6 +5,7 @@ ENV MIN_MEM=2048M
 ENV MAX_MEM=4096M
 ENV SERVER_PORT=25565
 ENV CRON_TIME="*/30 * * * *"
+ENV TZ="Europe/Madrid"
 
 # Install Java 21
 RUN apk add openjdk21
