@@ -9,6 +9,10 @@ docker-compose up -d
 ```
 
 # Otros comandos
+- Ver metricas del contenedor:
+    ```bash
+    docker stats hispanozuela-server
+    ```
 - Obtener cli del servidor:
     ```bash
     docker attach hispanozuela-server
