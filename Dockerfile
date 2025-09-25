@@ -5,7 +5,12 @@ ENV MIN_MEM=2048M
 ENV MAX_MEM=4096M
 ENV SERVER_PORT=25565
 ENV CRON_TIME="*/30 * * * *"
-ENV TZ="Europe/Madrid"
+
+# Set Timezone
+RUN apk add --no-cache tzdata \
+    && cp /usr/share/zoneinfo/Europe/Madrid /etc/localtime \
+    && echo "Europe/Madrid" > /etc/timezone \
+    && apk del tzdata
 
 # Install Java 21
 RUN apk add openjdk21
