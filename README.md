@@ -5,13 +5,21 @@
 
 # Arranque normal
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 # Otros comandos
+- Obtener cli del servidor:
+    ```bash
+    docker attach hispanozuela-server
+    ```
 - Obtener una shell del contendor:
     ```bash
     docker exec -ti hispanozuela-server sh
+    ```
+- Obtener logs del servidor:
+    ```bash
+    docker logs hispanozuela-server
     ```
 - Crear backup manual:
     ```bash

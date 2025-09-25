@@ -19,4 +19,6 @@ services:
       - ./server:/server
       - ./backups:/backups
     restart: always
+    stdin_open: true
+    tty: true
 ...
