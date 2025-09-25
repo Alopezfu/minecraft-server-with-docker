@@ -1,0 +1,22 @@
+---
+version: '3.8'
+services:
+  minecraft:
+    image: server:latest
+    container_name: hispanozuela-server
+    # command: >
+    #   echo "eula=true" > /server/eula.txt &&
+    #   echo "motd=§6§l✦ §aBienvenido a §eHISPANOZUELA §6§l✦§r" >> server.properties &&
+    #   echo "online-mode=true" >> server.properties
+    # environment:
+    #   EULA: "TRUE"  # Accept the Minecraft EULA
+    #   MEMORY: "2G"  # Allocate 2GB of RAM to the server
+    #   TYPE: "PAPER"  # Use Paper server type for better performance
+    #   VERSION: "1.20.4"  # Specify the Minecraft version
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./server:/server
+      - ./backups:/backups
+    restart: always
+...
