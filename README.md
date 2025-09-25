@@ -1,7 +1,7 @@
 # Primer arranque
 1. docker build . -t server:latest
 2. docker-compose up
-3. docker exec -ti hispanozuela-server sh /config_server.sh
+3. docker exec hispanozuela-server sh /config_server.sh
 
 # Arranque normal
 ```bash
