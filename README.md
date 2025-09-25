@@ -13,9 +13,13 @@ docker-compose up
     ```bash
     docker exec -ti hispanozuela-server sh
     ```
+- Crear backup manual:
+    ```bash
+    docker exec hispanozuela-server sh /create_backup.sh
+    ```
 - Ver log de cron:
     ```bash
-    docker exec -ti hispanozuela-server cat /var/log/cron.log
+    docker exec hispanozuela-server cat /var/log/cron.log
     ```
 - Eliminar todo:
     ```bash
