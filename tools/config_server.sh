@@ -7,13 +7,13 @@ motd="§6§l✦ §aBienvenido a §eHISPANOZUELA §6§l✦§r"
 sed -i 's/eula=false/eula=true/' /server/eula.txt
 
 # Set MOTD
-sed -i 's/^motd=.*/motd=${motd}/' /server/server.properties
+sed -i 's/^motd=.*/motd=$motd/' /server/server.properties
 
 # Disable online mode
 sed -i 's/^online-mode=.*/online-mode=false/' /server/server.properties
 
 # Set world seed
-sed -i 's/^level-seed=.*/level-seed=${seed}/' /server/server.properties
+sed -i 's/^level-seed=.*/level-seed=$seed/' /server/server.properties
 
 # Copy logo
 cp /server-icon.png /server
