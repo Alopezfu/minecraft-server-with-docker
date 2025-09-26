@@ -10,7 +10,7 @@ sed -i 's/^motd=.*/motd=§6§l✦ §aBienvenido a §eHISPANOZUELA §6§l✦§r/'
 sed -i 's/^online-mode=.*/online-mode=false/' /server/server.properties
 
 # Set world seed
-sed -i 's/^level-seed=.*/level-seed=3868635343581/' /server/server.properties
+sed -i 's/^level-seed=.*/level-seed=694200161758793929/' /server/server.properties
 
 # Copy logo
 cp /server-icon.png /server
